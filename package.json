@@ -1,35 +1,24 @@
 {
   "name": "support-bot-with-feedback-form",
   "version": "1.0.0",
-  "description": "A Support Bot For Your Server.Easy To Host.Work with Menu Interaction and Feedback Modal on Discord.",
+  "description": "A Support Bot For Your Server.",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
-    "test": "node index.js"
+"start": "node .",
+"node-update": "npm i --save-dev node@16 && npm config set prefix=$(pwd)/node_modules/node && export PATH=$(pwd)/node_modules/node/bin:$PATH",
+"node-clean": "rm -rf node_modules && rm package-lock.json && npm cache clear --force && npm cache clean --force && npm i",
+"node-update-then-clean": "npm run node-update && npm run node-clean"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Abdul1810/support-bot-with-feedback-form.git"
+    "url": "git+https://github.com/RadioEnthusiast/support-bot-with-feedback-form.git"
   },
-  "keywords": [
-    "Discord_Bot",
-    "Discord-js-v13",
-    "Discord_Buttons",
-    "Support_Bot",
-    "24/7_Online",
-    "Button_interactions",
-    "Feedback_Form"
-  ],
-  "author": "Abdul1810",
-  "license": "GPL-3.0-or-later",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Abdul1810/support-bot-with-feedback-form/issues"
+    "url": "https://github.com/RadioEnthusiast/support-bot-with-feedback-form/issues"
   },
-  "homepage": "https://github.com/Abdul1810/support-bot-with-feedback-form#readme",
-  "dependencies": {
-    "@discordjs/builders": "^0.12.0",
-    "@discordjs/rest": "^0.3.0",
-    "discord-api-types": "^0.27.3",
-    "discord.js": "^14.0.0-dev.1651147765-679dcda"
-  }
+  "homepage": "https://github.com/RadioEnthusiast/support-bot-with-feedback-form#readme"
 }
